@@ -92,7 +92,7 @@ void finish_and_reset() {
         }
         if (has_letter_or_symbol || s.len >= 12) {
             printf("[PASSWORD] Password: %d simbols | %lld ms | \"%.*s\"\n",
-                s.len, duration, s.len, s.buffer);
+                s.len, duration, s.len, (char*)s.buffer);
         }
     }
 
